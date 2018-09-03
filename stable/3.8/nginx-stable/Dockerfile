@@ -1,9 +1,9 @@
-ARG ALPINE_VERSION=3.8
+ARG ALPINE_VERSION=7.1-fpm-alpine3.8
 
 ########################
 # Build pagespeed psol #
 ########################
-FROM alpine:$ALPINE_VERSION as pagespeed
+FROM php:$ALPINE_VERSION as pagespeed
 
 # Check https://github.com/apache/incubator-pagespeed-mod/tags
 ARG MOD_PAGESPEED_TAG=v1.13.35.2
